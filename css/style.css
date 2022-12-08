@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+/* static UI settings */
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: rgb(65, 31, 42);
+    font-size: 22px;
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+    cursor: url('/imgs/cursor1.png'), auto;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.wrapper {
+    padding: 8px 12px;
+}
+
+.ui-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-evenly;
+}
+
+.slime-interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.menu-images {
+    max-height: auto;
+    margin-top: 3em;
+}
+
+.upgrade-button {
+    display: inline-block;
+    padding: 6px 10px;
+    background-color: rgb(133, 218, 71);
+    border-color: rgb(50, 91, 43);
+    border-width: thick;
+    border-style: ridge;
+    transition: 0.3s;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.upgrade-button:hover {
+    background-color: rgb(196, 253, 115);
+    border-color: rgb(80, 98, 50);
+    padding: 10px 14px;
+
+}
+
+.slimed-sword {
+    cursor: url('/imgs/cursor1_slimed.png'), pointer;
+}
+
+/* images */
+
+img {
+    max-width: 100%;
+    /* code to prevent images from being dragged from W3Schools retrieved here:
+    https://www.w3schools.blog/disable-drag-image-css
+     */
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+.title {
+    max-height: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.AOE {
+    max-width: 480px;
+    display: block;
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+/* background colours */
+
+.ui-background {
+    background-color: rgb(234, 146, 79);
+    border-width: 11px;
+    border-color: rgb(91, 57, 48);
+    border-style: solid;
+}
+
+
+.slime-background {
+    background-color: rgb(102, 201, 231);
+}
+
+/* typography */
+
+p {
+    margin-top: 0;
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+    text-decoration: underline;
+
+}
+
+span {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 3em;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slime RPG | Sophia Mai</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mansalva&family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="ui-grid">
+
+    <!-- sound effect "Slash" by 666HeroHero on Pixabay
+https://pixabay.com/sound-effects/slash-21834/ -->
+    <audio id="swordSlash">
+        <source src="audio/slash.mp3">
+    </audio>
+    <!-- sound efffect "Ding 1" by greenvwbeetle on Pixabay
+     https://pixabay.com/sound-effects/ding-1-14705/-->
+    <audio id="dinging">
+        <source src="audio/ding.mp3">
+    </audio>
+
+    <div class="ui-background container wrapper">
+        <img src="imgs/title.png" class="title" alt="Slime RPG Logo">
+        <p>Welcome to the game, Slime RPG, by Sophia Mai. </p>
+        <h2>Instructions</h2>
+        <img src="imgs/slime_alive_demo.png" alt="Demo picture of alive slime">
+        <p>Click on slime.</p>
+        <img src="imgs/slime_hurt_demo.png" alt="Demo picture of hurt slime">
+        <p>Kill slime for money.</p>
+    </div>
+
+    <div class="slime-background slime-interface container wrapper">
+        <div class="AOE" id="slimeStatus">
+            <img src="imgs/slimeAlive.png" class="AOE slimed-sword" alt=" Image of the poor slime">
+        </div>
+        <div>
+            <h1>[Lvl.5] Slime</h1>
+        </div>
+    </div>
+
+    <div class="ui-background container wrapper">
+        <div>
+            <h2>Inventory</h2>
+        </div>
+        <div class="menu-images" id="bagTransition">
+            <img src="imgs/bag_empty.png" alt="Image of Bag">
+            <br>
+            <span>Money:</span><a id="coinsTotal">0</a>
+            <br>
+        </div>
+        <div class="menu-images" id="swordType">
+            <img src="imgs/sword1.png" alt="Image of Sword">
+            <br>
+            <span>Sword: [WOODEN]</span>
+        </div>
+        <div id="upgradePressed">
+            <span class="upgrade-button slimed-sword">Sword Upgrade: [BRONZE]</span>
+            <p>Upgrade sword here. Each upgrade costs 100 coins. Every other upgrade does more damage per hit.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
