@@ -53,7 +53,7 @@ $('#slimeStatus').on("click", money);
 
 function money() {
     if (hits >= 16) {
-        coins += 10;
+        coins += 5;
         document.getElementById("coinsTotal").innerHTML = coins;
     }
 
