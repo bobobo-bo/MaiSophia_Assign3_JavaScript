@@ -12,7 +12,7 @@ body {
     font-size: 22px;
     font-family: 'Patrick Hand', cursive;
     text-align: center;
-    cursor: url(imgs/cursor1.png), auto;
+    cursor: url("../imgs/cursor1.png"), auto;
 }
 
 .container {
@@ -66,7 +66,7 @@ body {
 }
 
 .slimed-sword {
-    cursor: url(imgs/cursor1_slimed.png), pointer;
+    cursor: url("../imgs/cursor1_slimed.png"), pointer;
 }
 
 /* images */
